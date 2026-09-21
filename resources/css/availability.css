@@ -1,0 +1,65 @@
+.availability-page { min-height: 100vh; padding: 28px 30px 72px; color: #edeaf4; background: #080a10; font-family: Inter, Manrope, sans-serif; }
+.availability-header { display: flex; align-items: center; gap: 24px; max-width: 1440px; margin: 0 auto 26px; }
+.availability-brand { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 22px; letter-spacing: -.04em; }
+.availability-brand-mark { display: grid; place-items: center; width: 34px; height: 34px; color: #fff; border-radius: 11px 16px 11px 16px; background: linear-gradient(135deg, #a92bd7, #5e4af2); font-weight: 800; }
+.availability-header-copy { display: grid; gap: 3px; padding-left: 24px; border-left: 1px solid #2a2d38; }
+.availability-header-copy span { color: #fff; font-size: 14px; font-weight: 700; }
+.availability-header-copy small { color: #878b9c; font-size: 12px; }
+.availability-icon-button { display: grid; place-items: center; width: 38px; height: 38px; margin-left: auto; color: #c04ce8; border: 1px solid #2a2d38; border-radius: 11px; background: #10121b; }
+.availability-card { border: 1px solid #292d3a; border-radius: 17px; background: #10121b; }
+.availability-generator, .availability-appointments-card { max-width: 1440px; margin: 0 auto; padding: 34px; }
+.availability-section-title, .availability-card-heading { display: flex; align-items: flex-start; gap: 18px; }
+.availability-title-icon { display: grid; place-items: center; width: 50px; height: 50px; flex: 0 0 50px; color: #ed9bff; border-radius: 50%; background: #441052; }
+.availability-section-title h1, .availability-card-heading h2 { margin: 0; color: #f3f0f7; font-family: Georgia, serif; font-size: 22px; font-weight: 500; letter-spacing: -.02em; }
+.availability-section-title p, .availability-card-heading p { margin: 9px 0 0; color: #858a9a; font-size: 14px; }
+.availability-form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 34px; }
+.availability-field { display: block; min-width: 0; }
+.availability-field > span:first-child, .availability-label { display: block; margin-bottom: 12px; color: #b8b5c1; font-size: 14px; }
+.availability-field em { margin-left: 3px; color: #c42ce8; font-style: normal; }
+.availability-picker-wrap { display: flex; align-items: center; min-height: 62px; padding: 0 14px; border: 1px solid #343745; border-radius: 11px; color: #777b8b; background: #11121a; transition: border-color .2s, box-shadow .2s; }
+.availability-picker-wrap:focus-within { border-color: #bd2be6; box-shadow: 0 0 0 3px rgba(189, 43, 230, .14); }
+.availability-picker-wrap > .icon { flex: 0 0 auto; color: #030409; }
+.availability-datepicker-wrapper { display: block; width: 100%; }
+.availability-picker-input { width: 100%; padding: 0 0 0 12px; color: #e8e5ee; outline: 0; border: 0; background: transparent; font: inherit; font-size: 17px; }
+.availability-picker-input::placeholder { color: #dbd9e2; opacity: 1; }
+.availability-generator-footer { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-top: 31px; }
+.availability-day-list { display: flex; gap: 12px; flex-wrap: wrap; }
+.availability-day-list button { min-width: 64px; height: 48px; padding: 0 15px; color: #787b8b; border: 1px solid #303341; border-radius: 11px; background: #10121b; font-size: 14px; }
+.availability-day-list button.selected { color: #f1bbff; border-color: #bd2be6; background: #501362; }
+.availability-primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-width: 300px; height: 62px; padding: 0 26px; color: white; border: 0; border-radius: 11px; background: #ad29dc; font-size: 17px; font-weight: 700; }
+.availability-primary-button:hover { background: #bd35ed; }
+.availability-form-message { margin: 19px 0 0 68px; color: #d893ed; font-size: 13px; }
+.availability-two-columns { display: grid; grid-template-columns: 1.35fr 1fr; gap: 30px; max-width: 1440px; margin: 34px auto; }
+.availability-slots-card, .availability-invitation-card { min-height: 293px; padding: 34px; }
+.availability-card-heading > .icon { margin-left: auto; color: #d252f2; }
+.availability-empty-state { display: grid; min-height: 150px; place-items: center; margin: 20px 0 0; color: #74798a; font-size: 17px; }
+.availability-slot-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-top: 24px; }
+.availability-slot-group { padding: 13px; border: 1px solid #2d3040; border-radius: 11px; background: #151722; }
+.availability-slot-group strong { display: block; margin-bottom: 10px; color: #c8c5d3; font-size: 13px; }
+.availability-slot-group div { display: flex; gap: 6px; flex-wrap: wrap; }
+.availability-slot-group span { padding: 5px 7px; color: #eb9aff; border-radius: 6px; background: #421049; font-size: 11px; }
+.availability-invite-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 19px 23px; margin-top: 29px; border: 1px solid #2d3040; border-radius: 12px; background: #151520; }
+.availability-invite-row strong, .availability-invite-row span { display: block; }
+.availability-invite-row strong { color: #d9d6e1; font-size: 15px; font-weight: 500; }
+.availability-invite-row span { margin-top: 8px; color: #76798b; font-size: 13px; }
+.availability-outline-button { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 18px; color: #d997ec; border: 1px solid #9f36be; border-radius: 11px; background: transparent; font-weight: 600; white-space: nowrap; }
+.availability-outline-button:hover { background: rgba(168, 43, 220, .12); }
+.availability-appointments-card { min-height: 315px; }
+.availability-appointments-card h2 { display: flex; align-items: center; gap: 11px; }
+.availability-appointments-card h2 .icon { color: #d04af1; }
+.availability-table-header { display: grid; grid-template-columns: 1.5fr .85fr 1fr 1.4fr; gap: 20px; padding: 34px 0 17px; margin-top: 26px; color: #74788a; border-bottom: 1px solid #2b2e3a; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+.availability-appointments-card .availability-empty-state { min-height: 96px; }
+.noryvaq-datepicker-popper { z-index: 20; }
+.noryvaq-datepicker { padding: 12px; color: #e6e3ed; border: 1px solid #3a3d4d; border-radius: 13px; background: #171925; box-shadow: 0 18px 45px rgba(0,0,0,.45); font-family: Inter, sans-serif; }
+.noryvaq-datepicker .react-datepicker__header { padding-top: 10px; border-bottom: 1px solid #303342; background: #171925; }
+.noryvaq-datepicker .react-datepicker__current-month, .noryvaq-datepicker .react-datepicker-time__header, .noryvaq-datepicker .react-datepicker-year-header { color: #fff; font-weight: 700; }
+.noryvaq-datepicker .react-datepicker__day-name, .noryvaq-datepicker .react-datepicker__day, .noryvaq-datepicker .react-datepicker__time-list-item { color: #bab7c7; }
+.noryvaq-datepicker .react-datepicker__day:hover, .noryvaq-datepicker .react-datepicker__time-list-item:hover { border-radius: 7px; background: #44204e; }
+.noryvaq-datepicker .react-datepicker__day--selected, .noryvaq-datepicker .react-datepicker__day--keyboard-selected, .noryvaq-datepicker .react-datepicker__time-list-item--selected { color: #fff; border-radius: 7px; background: #ad29dc; }
+.noryvaq-datepicker .react-datepicker__day--outside-month { color: #555a6b; }
+.noryvaq-datepicker .react-datepicker__triangle { display: none; }
+.noryvaq-datepicker .react-datepicker__time-container { border-left-color: #303342; }
+.noryvaq-datepicker .react-datepicker__time { background: #171925; }
+
+@media (max-width: 900px) { .availability-page { padding: 20px 16px 48px; }.availability-form-grid { grid-template-columns: repeat(2, 1fr); }.availability-two-columns { grid-template-columns: 1fr; }.availability-generator-footer { align-items: stretch; flex-direction: column; }.availability-primary-button { width: 100%; } }
+@media (max-width: 540px) { .availability-header-copy { display: none; }.availability-generator, .availability-appointments-card, .availability-slots-card, .availability-invitation-card { padding: 22px 18px; }.availability-section-title { gap: 12px; }.availability-section-title h1, .availability-card-heading h2 { font-size: 19px; }.availability-section-title p, .availability-card-heading p { font-size: 12px; line-height: 1.5; }.availability-form-grid { grid-template-columns: 1fr; gap: 17px; }.availability-picker-wrap { min-height: 56px; }.availability-primary-button { min-width: 0; }.availability-invite-row { align-items: stretch; flex-direction: column; padding: 17px; }.availability-table-header { grid-template-columns: 1fr 1fr; gap: 14px; line-height: 1.5; }.availability-table-header span:nth-child(n+3) { display: none; } }

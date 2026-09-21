@@ -1,0 +1,19 @@
+{
+  "name": "Noryvaq",
+  "short_name": "Noryvaq",
+  "description": "La plataforma de reservas para negocios y personas.",
+  "lang": "es",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8faff",
+  "theme_color": "#5950f5",
+  "icons": [
+    {
+      "src": "/icons/noryvaq.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
