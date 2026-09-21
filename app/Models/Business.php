@@ -11,7 +11,7 @@ class Business extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug', 'industry', 'timezone', 'currency', 'capabilities', 'settings'];
+    protected $fillable = ['name', 'slug', 'industry', 'timezone', 'currency', 'capabilities', 'settings', 'demo_requested_at', 'demo_notes'];
 
     protected static function booted(): void
     {
@@ -22,7 +22,7 @@ class Business extends Model
 
     protected function casts(): array
     {
-        return ['capabilities' => 'array', 'settings' => 'array'];
+        return ['capabilities' => 'array', 'settings' => 'array', 'demo_requested_at' => 'datetime'];
     }
 
     public function users(): BelongsToMany

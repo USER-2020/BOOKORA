@@ -23,11 +23,17 @@ export default function Register() {
 
     return (
         <GuestLayout>
-            <Head title="Register" />
+            <Head title="Crear cuenta" />
+
+            <div className="mb-8">
+                <p className="text-sm font-semibold text-[#5b50f5]">Comienza gratis</p>
+                <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-950">Crea tu cuenta de negocio</h2>
+                <p className="mt-2 text-sm text-slate-500">Después te ayudaremos a configurar tu modelo de reservas.</p>
+            </div>
 
             <form onSubmit={submit}>
                 <div>
-                    <InputLabel htmlFor="name" value="Name" />
+                    <InputLabel htmlFor="name" value="Tu nombre" />
 
                     <TextInput
                         id="name"
@@ -44,7 +50,7 @@ export default function Register() {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="email" value="Email" />
+                    <InputLabel htmlFor="email" value="Correo electrónico" />
 
                     <TextInput
                         id="email"
@@ -61,7 +67,7 @@ export default function Register() {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                    <InputLabel htmlFor="password" value="Contraseña" />
 
                     <TextInput
                         id="password"
@@ -107,11 +113,11 @@ export default function Register() {
                         href={route('login')}
                         className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
-                        Already registered?
+                        ¿Ya tienes una cuenta?
                     </Link>
 
                     <PrimaryButton className="ms-4" disabled={processing}>
-                        Register
+                        Crear cuenta
                     </PrimaryButton>
                 </div>
             </form>

@@ -2,12 +2,17 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicBookingController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/onboarding', fn () => redirect()->route('onboarding.business'));
+Route::get('/onboarding/business', [OnboardingController::class, 'edit'])->name('onboarding.business');
+Route::post('/onboarding/session', [OnboardingController::class, 'save'])->name('onboarding.save');
+Route::post('/onboarding/complete', [OnboardingController::class, 'complete'])->name('onboarding.complete');
 
 Route::get('/book/{business:slug}', [PublicBookingController::class, 'show'])
     ->middleware('current.business')

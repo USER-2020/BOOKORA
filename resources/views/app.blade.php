@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8faff">
     <link rel="manifest" href="/manifest.webmanifest">
+    @routes
     @viteReactRefresh
     @vite('resources/js/app.jsx')
     @inertiaHead

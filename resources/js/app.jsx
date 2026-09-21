@@ -8,7 +8,14 @@ import { registerSW } from 'virtual:pwa-register';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Noryvaq';
 
-registerSW({ immediate: true });
+if (import.meta.env.PROD) {
+    registerSW({ immediate: true });
+} else if ('serviceWorker' in navigator) {
+    // Keep old production workers from serving stale Vite chunks during dev.
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
+    });
+}
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,

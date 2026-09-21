@@ -65,6 +65,6 @@ class RegisteredUserController extends Controller
         $business->users()->attach($user, ['role' => 'owner']);
         $request->session()->put('active_business_id', $business->id);
 
-        return redirect(route('dashboard', absolute: false));
+        return redirect()->route('onboarding.business');
     }
 }

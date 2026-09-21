@@ -14,9 +14,8 @@ class DashboardController extends Controller
 
         abort_unless($business, 403, 'Your account has no active business.');
 
-        return Inertia::render('Noryvaq', [
-            'screen' => 'dashboard',
-            'business' => $business->only(['id', 'name', 'slug', 'industry', 'timezone', 'currency', 'capabilities']),
+        return Inertia::render('Dashboard', [
+            'business' => $business->only(['id', 'name', 'slug', 'industry', 'timezone', 'currency', 'capabilities', 'settings']),
             'metrics' => [
                 'bookings_today' => $business->bookings()->whereDate('starts_at', now($business->timezone))->count(),
                 'customers' => $business->customers()->count(),
