@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DemoScheduleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
@@ -29,6 +30,11 @@ Route::get('/dashboard', DashboardController::class)
 Route::get('/availability', fn () => Inertia::render('Availability'))
     ->middleware(['auth', 'current.business'])
     ->name('availability.index');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/demo/schedule', [DemoScheduleController::class, 'index'])->name('demo.schedule');
+    Route::post('/demo/schedule', [DemoScheduleController::class, 'store'])->name('demo.schedule.store');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
